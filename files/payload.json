@@ -1,0 +1,13 @@
+{
+   "adminEmail": "aric.day@broadcom.com",
+   "auditLogLevel": "TRACE",
+   "multiclusterEnabled": true,
+   "noReplyEmail":"noreply@example.com",
+   "performanceLogLevel": "ERROR",
+   "portalLogLevel": "ERROR",
+   "portalName": "Test Portal",
+   "subdomain": "k8s.aricday.net",
+   "tenantId": "portal.44",
+   "tenantType": "ON-PREM",
+   "termOfUse": "eula"
+     }
