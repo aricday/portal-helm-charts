@@ -1,11 +1,11 @@
 # GKE Ingress
 ingress:
-  enabled: false
+  enabled: true
 
 # Default for OpenShift. If deploying on GKE. Set route to false and ingress to true
 # Openshift Route
 route:
-  enabled: true
+  enabled: false
 
 analytics:
   replicaCount: 1
@@ -193,7 +193,7 @@ user:
   kubeNamespace: dev-portal
   legacyHostnames: false
   legacyDatabaseNames: false
-  domain: example.com
+  domain: k8s.aricday.net
   # the subdomain you would like to use for your external tenant. By providing a value, an ingress rule will be created for accessing
   # an external tenant
   externalTenant:
@@ -212,7 +212,7 @@ user:
   smtpHost: notinstalled
   smtpPassword: notinstalled
   smtpPort: notinstalled
-  smtpRequireSSL: true
+  smtpRequireSSL: false
   smtpUsername: notinstalled
   hostnameWhitelist:
   defaultTenantId: apim
@@ -230,12 +230,12 @@ user:
     telemetry_proxy_password:
 
 secrets:
-  apimSslKeyPass: certpass
-  datalakeKeyPass: certpass
-  dispatcherSslKeyPass: certpass
-  dssgKeyPass: certpass
-  pssgSslKeyPass: certpass
-  tpsKeyPass: certpass
+  apimSslKeyPass: 7layer
+  datalakeKeyPass: 7layer
+  dispatcherSslKeyPass: 7layer
+  dssgKeyPass: 7layer
+  pssgSslKeyPass: 7layer
+  tpsKeyPass: 7layer
 
 persistence:
   storage: 
