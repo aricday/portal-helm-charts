@@ -6,6 +6,8 @@ metadata:
     name: dispatcher
     service: dispatcher
   name: dispatcher
+  annotations:
+    service.alpha.kubernetes.io/app-protocols: '{"portal-https":"HTTPS"}'
 spec:
   ports:
     - port: 443

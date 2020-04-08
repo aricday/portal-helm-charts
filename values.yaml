@@ -198,12 +198,22 @@ user:
   analyticsEnabled: true
   ssoDebug: false
   enrollNotificationEmail: noreply@mail.example.com
-  setupDemoDatabase: true
+#  setupDemoDatabase: true
+#  databaseType: mysql
+#  databaseHost: portaldb
+#  databasePort: 3306
+#  databaseUsername: admin
+#  databasePassword: 7layer
+
+## New Settings
+  setupDemoDatabase: false
   databaseType: mysql
-  databaseHost: portaldb
+  databaseHost: mysql-server
   databasePort: 3306
-  databaseUsername: admin
+  databaseUsername: root
   databasePassword: 7layer
+
+
   # If setupInternalSMTP is false, you should provide the creds and cert for your external smtp
   setupInternalSMTP: false
   smtpCert: notinstalled

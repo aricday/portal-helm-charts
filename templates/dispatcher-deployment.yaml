@@ -28,19 +28,26 @@ spec:
           - configMapRef:
               name: dispatcher-config
           readinessProbe:
-            exec:
-              command: ["sh", "/usr/bin/healthcheck"]
+            httpGet:
+                path: /nginx_status
+                port: 8443
+                scheme: HTTPS
             initialDelaySeconds: 60
             timeoutSeconds: 5
             periodSeconds: 15
             successThreshold: 1
           livenessProbe:
-            exec:
-              command: ["sh", "/usr/bin/healthcheck"]
+            httpGet:
+              path: /nginx_status
+              port: 8443
+              scheme: HTTPS
             initialDelaySeconds: 300
             timeoutSeconds: 5
             periodSeconds: 15
             successThreshold: 1
+          ports:
+          - name: dispatcher
+            containerPort: 8443
           resources:
             requests:
               cpu: 100m

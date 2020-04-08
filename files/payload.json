@@ -5,9 +5,9 @@
    "noReplyEmail":"noreply@example.com",
    "performanceLogLevel": "ERROR",
    "portalLogLevel": "ERROR",
-   "portalName": "Test Portal",
+   "portalName": "API Developer Portal",
    "subdomain": "k8s.aricday.net",
-   "tenantId": "portal.44",
+   "tenantId": "portal-45",
    "tenantType": "ON-PREM",
    "termOfUse": "eula"
      }
